@@ -1,0 +1,83 @@
+section.chapters {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+article.chapter {
+    border: solid 2px #aaaaaa;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    width: 25%;
+    scale: 1;
+    transition: scale 250ms ease-in-out;
+}
+article.chapter:hover {
+    scale: 1.02;
+}
+
+article.chapter > h1 {
+    color: white;
+    font-size: larger;
+    font-size: max(1.7vw, 15px);
+    font-weight: bold;
+    font-family: 'Bungee', 'Onest', system-ui, helvetica;
+}
+
+article.chapter > h2 {
+    color: white;
+    font-size: xx-large;
+    font-size: max(2.5vw, 20px);
+    font-weight: bold;
+    font-family: 'Onest', system-ui, helvetica;
+}
+
+.chapter.one {
+    background: var(--theme-1);
+}
+.go.one {
+    color: var(--theme-1);
+}
+
+.chapter.two {
+    background: var(--theme-2);
+}
+.go.two {
+    color: var(--theme-2);
+}
+
+.chapter.three {
+    background: var(--theme-3);
+}
+.go.three {
+    color: var(--theme-3);
+}
+
+button.go {
+    text-align: center;
+    font-size: large;
+    font-family: 'Onest', system-ui, helvetica;
+    background: white;
+    border: 0px;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0px 1px 2px 1.5px lightgrey;
+    font-weight: bold;
+    transition: background 200ms ease-in-out
+}
+
+button.go:hover {
+    background: #ededed
+}
+
+@media screen and (max-width: 640px) {
+    section.chapters {
+        flex-direction: column;
+    }
+    article.chapter {
+        width: 90%;
+    }
+}
