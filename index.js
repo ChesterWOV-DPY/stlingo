@@ -6,6 +6,6 @@ if (chapterLinks.length === 0) {
 
 for (let link of chapterLinks) {
     link.addEventListener('click', e => {
-        window.location.assign(`/chapter${e.target.dataset.chapter}.html`)
+        window.location.assign(`./chapter${e.target.dataset.chapter}.html`)
     })
 }
