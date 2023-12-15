@@ -58,6 +58,14 @@ button.standard {
     width: 100%;
 }
 
+.changelog {
+    opacity: 0;
+    font-size: small;
+}
+.changelog:hover {
+    opacity: 1;
+}
+
 @media screen and (max-width: 640px) {
     section.chapters {
         flex-direction: column;
