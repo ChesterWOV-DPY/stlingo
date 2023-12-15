@@ -1,0 +1,29 @@
+section.cards {
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    margin: 17px;
+}
+
+article.card {
+    width: 95%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border: solid 1px lightgrey;
+    border-radius: 7px;
+}
+
+.card > button.standard {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-weight: bold;
+}
+
+.card > span {
+    font-size: larger;
+    font-family: var(--body-font);
+    font-weight: bold;
+}

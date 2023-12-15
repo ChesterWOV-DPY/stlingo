@@ -4,6 +4,16 @@
     --theme-1: #72d533;
     --theme-2: #3472d5;
     --theme-3: #d53472;
+    --standard-shadow: 0px 1px 2px 1.5px lightgrey;
+    --body-font: 'Onest', system-ui, helvetica;
+    --title-font: 'Bungee', 'Onest', system-ui, helvetica;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
 }
 
 body {
@@ -22,7 +32,7 @@ nav {
 }
 
 .title {
-    font-family: 'Bungee', 'Onest', system-ui, helvetica;
+    font-family: var(--title-font);
     font-size: x-large;
     font-size: max(2.3vw, 23px);
     max-width: 50%;
@@ -32,4 +42,22 @@ nav {
 }
 .title:hover {
     text-decoration: underline solid;
+}
+
+button.standard {
+    text-align: center;
+    font-size: large;
+    font-family: var(--body-font);
+    background: white;
+    border: 0px;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: var(--standard-shadow);
+    font-weight: bold;
+    transition: background 200ms ease-in-out;
+}
+
+button.standard:hover {
+    background: #ededed
 }

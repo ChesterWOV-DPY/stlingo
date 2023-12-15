@@ -22,7 +22,7 @@ article.chapter > h1 {
     font-size: larger;
     font-size: max(1.7vw, 15px);
     font-weight: bold;
-    font-family: 'Bungee', 'Onest', system-ui, helvetica;
+    font-family: var(--title-font);
 }
 
 article.chapter > h2 {
@@ -30,7 +30,7 @@ article.chapter > h2 {
     font-size: xx-large;
     font-size: max(2.5vw, 20px);
     font-weight: bold;
-    font-family: 'Onest', system-ui, helvetica;
+    font-family: var(--body-font);
 }
 
 .chapter.one {
@@ -54,23 +54,8 @@ article.chapter > h2 {
     color: var(--theme-3);
 }
 
-button.go {
-    text-align: center;
-    font-size: large;
-    font-family: 'Onest', system-ui, helvetica;
-    background: white;
-    border: 0px;
-    border-radius: 7px;
-    margin: 5px;
-    padding: 10px;
+button.standard {
     width: 100%;
-    box-shadow: 0px 1px 2px 1.5px lightgrey;
-    font-weight: bold;
-    transition: background 200ms ease-in-out
-}
-
-button.go:hover {
-    background: #ededed
 }
 
 @media screen and (max-width: 640px) {
